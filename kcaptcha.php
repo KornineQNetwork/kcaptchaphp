@@ -8,6 +8,7 @@ function kaptcha_validate() {
    
     $postFields = [
         'key' => $_POST["_KAPTCHA_KEY"],
+        'kaptcha_value' => $_POST["_KAPTCHA"],
         'site_key' => SITEKEY,
         'site_secret' => SITE_SECRET
     ];
